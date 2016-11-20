@@ -1,0 +1,79 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+/* Structural and Formatting */
+html, body {	
+	height: 100%;
+	margin: 0;
+	font-family: "Montserrat", Arial, Helvetica, sans-serif;
+	background-color: black; /*#595959;*/		
+	background-image: url("background.jpg");	
+	background-position: center center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#wrapper {	
+	width: 100%;    
+    min-width: 740px;
+    max-width: 1000px;
+    height:auto !important;
+    margin: 2% auto;
+    padding-bottom: 10px; 
+    background-color: #f2f2f2;		
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+footer {	
+	height: 60px;
+    clear: both;
+    width: 100%;
+    min-width: 740px;
+    max-width: 1000px;
+    margin-top: -40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0.5%;  
+	text-indent: 20px;
+	color: #EFF5F8;	
+	background-color:#333333;	
+    -webkit-border-radius: 0 0 5px 5px;
+	-moz-border-radius: 0 0 5px 5px;
+	border-radius: 0 0 5px 5px;
+}
+footer p {
+	width: 50%;
+	float: left;
+}
+#main {
+    width: 100%;
+  	padding: 3% 0;   
+    font-size: 2em;  
+    color: #333333;
+    text-align: center;    
+}
+
+/************/
+
+/* Useful Classes */
+.footer_clear {
+	clear: both;
+}
+/************/
+
+/* Headers */
+h1 {
+	color: #EFF5F8;	
+	background-color:#333333;
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;		
+    font-size: 45px;
+    text-align: center;    
+    padding: 2% 0;
+    margin: 0;
+}
+
+/************/
