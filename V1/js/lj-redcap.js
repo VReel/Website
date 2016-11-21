@@ -35,7 +35,7 @@
               data: {subscription:email},
               success: function () {
                 $("#newsletter").fadeOut(250, function(){
-                  $(".lj-message").html('<i class="fa fa-check-circle"></i> We will be in touch soon!').fadeIn(250);
+                  $(".lj-message").html('<i class="fa fa-check-circle"></i> Welcome on-board! We\'ll be in touch soon!').fadeIn(250);
                 });
               }
             });
