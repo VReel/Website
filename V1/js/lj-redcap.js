@@ -10,7 +10,7 @@
     // Subscription notifications 
     $(function () {
       $('.lj-message').hide();
-      $("#newsletter").btnSubmit(function (event) {
+      $("#newsletter").submit(function (event) {
         var input = $('.lj-message');
           if(!input.is(':empty')) {
             $('.lj-message').stop(true).fadeOut(250);
@@ -28,8 +28,9 @@
             $(".lj-message").stop(true).html('<i class="fa fa-exclamation-circle"></i> E-mail address is not valid.').fadeIn(250);
             $("input#email").focus();            
           }
-          else {
-          	document.getElementById("newsletter").submit();
+          else {          	
+          	document.body.innerHTML += '<form id="dynForm" action="http://formspree.io/hello@vreel.io" method="post" target="_blank"><input type="hidden" name="email" value="' + email + '"></form>';
+			document.getElementById("dynForm").submit();
           	$("#newsletter").fadeOut(250, function(){
                   $(".lj-message").html('<i class="fa fa-check-circle"></i> Welcome on-board! We\'ll be in touch soon!').fadeIn(250);
             });
