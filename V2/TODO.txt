@@ -1,0 +1,5 @@
+GET A PROGRAMMER TO HELP ME WHEN I COME TO MAKING A MORE INVOLVED DYNAMIC WEBSITE!
+
+Building a Static Website is easy because you just need to leave the whole site in some accessible endpoint on the internet.
+
+However, to make a Dynamic Website you need to worry about hosting servers, serving the files correctly to the user, scaling up… essentially it can get complicated quickly and if I need to build a more involved website I should contract and pay an experienced web developer to help me out!

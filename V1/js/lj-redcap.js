@@ -10,7 +10,7 @@
     // Subscription notifications 
     $(function () {
       $('.lj-message').hide();
-      $("#newsletter").submit(function (event) {
+      $("#newsletter").btnSubmit(function (event) {
         var input = $('.lj-message');
           if(!input.is(':empty')) {
             $('.lj-message').stop(true).fadeOut(250);
@@ -29,15 +29,9 @@
             $("input#email").focus();            
           }
           else {
-            $.ajax({
-              type: "POST",
-              url: "./php/send.php",
-              data: {subscription:email},
-              success: function () {
-                $("#newsletter").fadeOut(250, function(){
+          	document.getElementById("newsletter").submit();
+          	$("#newsletter").fadeOut(250, function(){
                   $(".lj-message").html('<i class="fa fa-check-circle"></i> Welcome on-board! We\'ll be in touch soon!').fadeIn(250);
-                });
-              }
             });
           }
        });
