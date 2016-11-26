@@ -29,7 +29,7 @@
             $("input#email").focus();            
           }
           else {          	
-          	document.body.innerHTML += '<form id="dynForm" action="http://formspree.io/hello@vreel.io" method="post" target="_blank"><input type="hidden" name="email" value="' + email + '"></form>';
+          	document.body.innerHTML += '<form id="dynForm" action="https://api.formbucket.com/f/buk_CnYlXbDYBrjfpCqhwfXlidV6" method="post" target="_blank"><input type="hidden" name="email" value="' + email + '"></form>';
 			document.getElementById("dynForm").submit();
           	$("#newsletter").fadeOut(250, function(){
                   $(".lj-message").html('<i class="fa fa-check-circle"></i> Welcome on-board! We\'ll be in touch soon!').fadeIn(250);
